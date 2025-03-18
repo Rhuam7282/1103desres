@@ -2,10 +2,8 @@
     padding: 0;
     margin: 0;
 }
-
-button {
-    display: none;
-    position: fixed;
+menu header{
+    width: 100%;
 }
 
 img {
@@ -37,9 +35,14 @@ main {
     padding-bottom: 0px;
 }
 
-nav {
+nav,
+menu {
     margin-bottom: 20px;
     border-bottom: solid 2px rgb(161, 182, 148);
+}
+
+#SB {
+    border-bottom: 0px;
 }
 
 main nav section {
@@ -64,6 +67,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+    main nav section img {
+        height: auto;
+    }
     main {
         justify-content: center;
         padding: 0;
@@ -82,26 +88,79 @@ footer {
         flex-wrap: wrap;
     }
 
-    menu nav {
-        display: none;
+    menu img {
+        height: 55pt;
+    }
+
+    menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    menu ul li {
+        margin: 10px;
+    }
+    menu nav ul{
+        display: contents;
+    }
+
+}
+
+@media (max-height: 400px) {
+    menu header{
+        width: auto;
+    }
+    main nav section img {
+        height: auto;
+    }
+    main {
+        justify-content: center;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main nav section {
+        width: 70%;
+        height: auto;
+    }
+
+    main nav,
+    menu {
+        display: flex;
+        flex-wrap: wrap;
     }
 
     menu img {
         height: 55pt;
     }
-    menu{
+
+    menu {
         display: flex;
         justify-content: center;
     }
 
-    button h2 {
-        margin: 0px;
+    menu ul li {
+        margin: 10px;
+    }
+    menu ul{
+        display: flex;
+    }   
+
+    #SB {
+        border-bottom: 0px;
+        padding: 10px;
     }
 
-    button {
-        background-color: rgb(161, 182, 148);
-        padding: 5px;
-        display: block;
-        position: fixed;
+    #SB ul {
+        display: grid;
+        grid-template-rows: max-content max-content max-content;
+        text-align: right;
+    }
+
+    menu header,
+    menu nav {
+        padding: auto;
+        margin: auto;
     }
 }
