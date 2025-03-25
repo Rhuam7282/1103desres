@@ -2,9 +2,6 @@
     padding: 0;
     margin: 0;
 }
-menu header{
-    width: 100%;
-}
 
 img {
     height: 200px;
@@ -18,13 +15,17 @@ body {
     text-align: center;
 }
 
+/*Daqui para cima, apenas definindo um estilo padrão para toda a página*/
+
 header {
     padding: 20px 0px 40px 0px;
     text-align: center;
 }
 
+/*Adicionando formatação para o cabeçalho ficar mais confortável visualmente*/
+
 nav ul,
-main nav {
+main div {
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -35,22 +36,18 @@ main {
     padding-bottom: 0px;
 }
 
-nav,
+div,
 menu {
     margin-bottom: 20px;
     border-bottom: solid 2px rgb(161, 182, 148);
 }
 
-#SB {
-    border-bottom: 0px;
-}
-
-main nav section {
+main div section {
     width: auto;
     height: 70%;
 }
 
-main nav section img {
+main div section img {
     width: 70%;
 }
 
@@ -60,16 +57,23 @@ h2 {
     margin-bottom: 20px;
 }
 
+/*Daqui para cima, correções pequenas para a interface ficar mais espaçada, alinhada e encaixada como desejava*/
+
 footer {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
 }
 
+/*Centralizando o conteúdo do rodapé*/
+
 @media (max-width: 768px) {
-    main nav section img {
+    main div section img {
         height: auto;
     }
+
+    /*Deixando a logo adaptavel para ocupar pouco espaços nas variadas telas*/
+
     main {
         justify-content: center;
         padding: 0;
@@ -77,12 +81,12 @@ footer {
         flex-wrap: wrap;
     }
 
-    main nav section {
+    main div section {
         width: 70%;
         height: auto;
     }
 
-    main nav,
+    main div,
     menu {
         display: flex;
         flex-wrap: wrap;
@@ -100,19 +104,27 @@ footer {
     menu ul li {
         margin: 10px;
     }
-    menu nav ul{
+
+    menu nav ul {
         display: contents;
     }
 
+    /*Fazendo com que o menu e main se alinhem diferentemente para melhor adaptar à telas de celular*/
 }
 
+/*Responsividade para telas verticalizadas*/
+
 @media (max-height: 400px) {
-    menu header{
+    menu header {
         width: auto;
     }
-    main nav section img {
+
+    main div section img {
         height: auto;
     }
+
+    /*Deixando a logo adaptavel para ocupar pouco espaços nas variadas telas*/
+
     main {
         justify-content: center;
         padding: 0;
@@ -120,12 +132,12 @@ footer {
         flex-wrap: wrap;
     }
 
-    main nav section {
+    main div section {
         width: 70%;
         height: auto;
     }
 
-    main nav,
+    main div,
     menu {
         display: flex;
         flex-wrap: wrap;
@@ -143,9 +155,10 @@ footer {
     menu ul li {
         margin: 10px;
     }
-    menu ul{
+
+    menu ul {
         display: flex;
-    }   
+    }
 
     #SB {
         border-bottom: 0px;
@@ -163,4 +176,8 @@ footer {
         padding: auto;
         margin: auto;
     }
+
+    /*Fazendo com que o menu e main se alinhem diferentemente para melhor adaptar à telas de celular*/
 }
+
+/*Responsividade para telas menores e horizontalizadas*/

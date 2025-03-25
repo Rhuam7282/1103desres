@@ -1,0 +1,4 @@
+B1 A6
+	A maior fonte utilizada para o aprendizado foi o W3Schools.
+	O maior desafio foi verificar se a tag utilizada era realmente a melhor opção para o devido conteúdo e adaptar o css para o novo html.
+	De qualquer forma, o aprendizado foi muito importante pelo conhecimento para acessibilidade.
